@@ -1,0 +1,24 @@
+{
+  "name": "sammii",
+  "version": "1.0.0",
+  "description": "Sammii's terminal portfolio — run npx sammii",
+  "type": "module",
+  "bin": {
+    "sammii": "./bin/cli.js"
+  },
+  "scripts": {
+    "dev": "node bin/cli.js",
+    "build": "echo 'No build step needed'"
+  },
+  "keywords": ["portfolio", "cli", "terminal", "developer"],
+  "author": "Sammii <hello@sammii.dev>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "ink": "^5.1.0",
+    "ink-link": "^4.1.0",
+    "ink-select-input": "^6.0.0",
+    "ink-gradient": "^3.0.0",
+    "react": "^18.3.1"
+  }
+}
