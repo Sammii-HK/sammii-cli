@@ -69,13 +69,18 @@ function ProjectCard({ project, index, color }) {
     React.createElement(Box, { flexDirection: 'column', marginLeft: 2, marginBottom: 1 },
       React.createElement(Box, null,
         React.createElement(Text, { color, bold: true }, `  ${project.name}`),
-        project.url
-          ? React.createElement(Text, { color: DIM }, `  ${project.url}`)
-          : null
       ),
       React.createElement(Text, { color: DIM, dimColor: true }, `    ${project.tech}`),
       React.createElement(Box, { marginLeft: 4, width: 66 },
         React.createElement(Text, { wrap: 'wrap' }, project.desc)
+      ),
+      React.createElement(Box, { marginLeft: 4, gap: 2 },
+        project.url
+          ? React.createElement(Text, { color: CYAN, underline: true }, project.url)
+          : null,
+        project.github
+          ? React.createElement(Text, { color: DIM, underline: true }, project.github)
+          : null
       )
     )
   );
